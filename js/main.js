@@ -66,3 +66,16 @@ function hideSearch(){
   searchInputEl.value =''
 }
 
+// 요소가 화면에 보이는지 관찰 (가시성 관찰) 
+const io = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(!entry.isIntersecting){
+      return
+    } // 화면에 보이지 않을 때는 함수 종료, 
+    entry.target.classList.add('show') // 화면에 보일 때
+  })
+})
+const infoEls = document.querySelectorAll('.info')
+infoEls.forEach(function(el){
+  io.observe(el)
+})
