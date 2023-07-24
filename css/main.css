@@ -129,10 +129,10 @@ a.link::after {
   position: relative;
   z-index: 1;
 }
-.info.infos--center{
+.infos.infos--center{
   justify-content: center;
 }
-.info.infos--end{
+.infos.infos--end{
   justify-content: flex-end;
 }
 .info {
