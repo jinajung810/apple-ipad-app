@@ -1,1 +1,1 @@
-# apple-ipad-app
+# iPad 반응형
