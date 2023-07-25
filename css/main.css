@@ -2260,23 +2260,25 @@ main {
     margin: 68px auto 34px;
   }
 }
-@media (max-width: 740px){}
-.compare .whitebox {
-  max-width: 430px;
+@media (max-width: 740px){
+  .compare .whitebox {
+    max-width: 430px;
+  }
+  .compare .items {
+    max-width: 190px;
+  }
+  .compare .item {
+    border-bottom: none;
+  }
+  .compare .links {
+    padding-top: 40px;
+    border-top: 1px solid var(--color-border);
+  }
+  .compare a.link {
+    margin-top: 0;
+  }
 }
-.compare .items {
-  max-width: 190px;
-}
-.compare .item {
-  border-bottom: none;
-}
-.compare .links {
-  padding-top: 40px;
-  border-top: 1px solid var(--color-border);
-}
-.compare a.link {
-  margin-top: 0;
-}
+
 
  /* Footer */
 footer {
